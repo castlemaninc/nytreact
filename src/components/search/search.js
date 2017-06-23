@@ -8,26 +8,34 @@ export default class Search extends Component {
 			<div>
 				<Grid>
 					<Row className="show-grid">
-						<Col xs={6} md={6}>
-							<Panel>
-								<Form inline>
-									<FormControl type="search" />									
+						<Col xs={0} md={1} lg={2}>
+						</Col>
+						<Col xs={12} md={10} lg={8}>
+							<form>
+								
+								<FormGroup>
+									<FormControl type="text" placeholder="Topic" />
+								</FormGroup>
+								<FormGroup>
+									<FormControl type="text" placeholder="Start Year" />
+								</FormGroup>
+								<FormGroup>
+									<FormControl type="text" placeholder="End Year" />
+								</FormGroup>
+																					
 								    <Button type="submit" bsStyle="primary">
 								      Submit
 								    </Button>
-								</Form>
-							</Panel>						
+								
+							</form>
+													
 							
 							
 
+						</Col>
+						<Col xs={0} md={1} lg={2}>
 						</Col>
 						
-						<Col xs={6} md={6}>
-												
-							
-							
-
-						</Col>
 					</Row>					
 				</Grid>
 			</div>
